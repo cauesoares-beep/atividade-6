@@ -1,0 +1,13 @@
+@Override
+public Medicamento pesquisarMedicamento(String codigo)
+        throws MedicamentoNaoExisteException {
+
+    Medicamento med = this.medicamentos.get(codigo);
+
+    if (med == null) {
+        throw new MedicamentoNaoExisteException(
+                "Não existe medicamento com o código " + codigo);
+    }
+
+    return med;
+}
