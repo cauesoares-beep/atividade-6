@@ -1,0 +1,10 @@
+List<Horario> novosHorariosM1 = new ArrayList<>();
+novosHorariosM1.add(Horario.H8);
+novosHorariosM1.add(Horario.H20);
+
+sistema.atualizarHorariosDeMedicamento("M1", novosHorariosM1);
+
+List<Medicamento> medicamentosDas8 =
+        sistema.pesquisarMedicamentosDoHorario(Horario.H8);
+
+assertTrue(medicamentosDas8.size() == 2);
