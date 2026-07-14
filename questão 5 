@@ -1,0 +1,5 @@
+a) Temos encapsulamento na classe Funcionario considerando que escondemos os atributos deixando-os privados.
+Resposta: Verdadeiro (V) 
+b) O método cadastrarFuncionario da classe SistemaFuncionariosBomPrato é um método abstrato.
+Resposta: Falso (F) 
+Na interface ele é abstrato, mas na classe SistemaFuncionariosBomPrato ele possui implementação.
