@@ -1,0 +1,13 @@
+@Override
+public int contarFuncionariosDoTipo(TipoFuncionario tipo) {
+
+    int contador = 0;
+
+    for (Funcionario f : this.funcionarios.values()) {
+        if (f.getTipo() == tipo) {
+            contador++;
+        }
+    }
+
+    return contador;
+}
