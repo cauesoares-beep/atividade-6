@@ -1,0 +1,13 @@
+@Override
+public void alterarSalarioDeFuncionario(String cpf, double novoSalario)
+        throws FuncionarioInexistenteException {
+
+    Funcionario f = this.funcionarios.get(cpf);
+
+    if (f == null) {
+        throw new FuncionarioInexistenteException(
+                "Funcionário não encontrado");
+    }
+
+    f.setSalario(novoSalario);
+}
