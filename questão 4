@@ -1,0 +1,14 @@
+sistema.cadastrarFuncionario(
+    new Funcionario(
+        "222.222.222-22",
+        "João Paulo Silva",
+        TipoFuncionario.COZINHEIRO,
+        5000));
+
+List<Funcionario> lista =
+        sistema.pesquisarFuncionariosComSalarioMaiorQue(2000);
+
+assertEquals(2, lista.size());
+
+assertEquals(1,
+        sistema.contarFuncionariosDoTipo(TipoFuncionario.COZINHEIRO));
