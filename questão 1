@@ -1,0 +1,13 @@
+@Override
+public List<Funcionario> pesquisarFuncionariosComSalarioMaiorQue(double valor) {
+
+    List<Funcionario> lista = new LinkedList<Funcionario>();
+
+    for (Funcionario f : this.funcionarios.values()) {
+        if (f.getSalario() > valor) {
+            lista.add(f);
+        }
+    }
+
+    return lista;
+}
